@@ -1,0 +1,36 @@
+<div>
+  <ul>
+    <li *ngFor="let item of items | async">
+      <pre>{{ item | json }}</pre>
+    </li>
+  </ul>
+
+  <div>
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      [(ngModel)]="email"
+    />
+
+    <label for="firstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="firsName"
+      [(ngModel)]="firstName"
+    />
+
+    <button
+      class="”form-control”"
+      type="submit"
+      class="btn btn-primary"
+      (click)="save()"
+    >
+      Submit
+    </button>
+  </div>
+</div>
