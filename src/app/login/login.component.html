@@ -1,5 +1,18 @@
-<div class="center">
+<div class="center" style="color: white">
   <button class="button btn btn-danger btn-lg" (click)="auth.googleSignin()">
     Login with Google
   </button>
+  <br />
+  <br />
+  <button (click)="showProfile()">Show Logged-In User Profile</button>
+  <div>
+    <img src="{{ photoUrl }}" style="height: 100px; width: 100px" />
+    <br />
+    {{ email }}
+    {{ name }}
+  </div>
+
+  <br />
+  <button (click)="showRole()">Show Role</button>
+  {{ userRole }}
 </div>

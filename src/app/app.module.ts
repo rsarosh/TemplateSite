@@ -22,16 +22,18 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { config } from "rxjs";
 import { FormsModule } from "@angular/forms";
 import { UserRegistrationComponent } from "./user-registration/user-registration.component";
+import { ImageUploadComponent } from "./image-upload/image-upload.component";
 
 const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "main", component: MainComponent },
   { path: "userdetails", component: UserRegistrationComponent },
+  { path: "imageupload", component: ImageUploadComponent },
   { path: "", redirectTo: "main", pathMatch: "full" }
 ];
 
 const firebaseConfig = {
-  apiKey: "XXXX",
+  apiKey: "ttt",
   authDomain: "knosh-ec3d4.firebaseapp.com",
   databaseURL: "https://knosh-ec3d4.firebaseio.com",
   projectId: "knosh-ec3d4",
@@ -52,7 +54,8 @@ const firebaseConfig = {
     Mainband3Component,
     Mainband4Component,
     LoginComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,

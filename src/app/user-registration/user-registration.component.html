@@ -1,7 +1,7 @@
-<div>
-  <ul>
-    <li *ngFor="let item of items | async">
-      <pre>{{ item | json }}</pre>
+<div style="color: white">
+  <ul style="color: white">
+    <li *ngFor="let item of items | async" style="color: white">
+      <pre style="color: white">{{ item | json }}</pre>
     </li>
   </ul>
 
@@ -10,7 +10,6 @@
     <input
       type="email"
       class="form-control"
-
       aria-describedby="emailHelp"
       placeholder="Enter email"
       [(ngModel)]="email"
